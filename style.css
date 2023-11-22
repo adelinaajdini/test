@@ -6,16 +6,20 @@ body {
 
 h1 {
    color: #4169e1; /* RoyalBlue header */
+   text-align: center;
+   font-size: 22px;
 }
 
 h2 {
    color: #8b4513; /* SaddleBrown subheader */
    font-size: 18px;
+   text-align: center;
 }
 
 p {
    color: #ff0000; /* Red text */
    line-height: 1.5;
+   text-align: center;
 }
 
 .info
@@ -25,8 +29,7 @@ background-color: black;
 }
 
 .piano {
-
-   font-size: 8px;
+   font-size: 12px;
 }
 
 .moon {
