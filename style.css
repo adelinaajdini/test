@@ -62,3 +62,48 @@ color: white;}
 footer p {color: white;}
 
 span {font-size: 10px;}
+
+.square, .rectangle {
+   width: 100px; /* Adjust width as needed */
+   height: 100px; /* Adjust height as needed */
+   background-color: blue; /* Any color you like */
+   margin: 0 auto;
+ }
+
+ .rectangle {
+   width: 200px; /* Adjust width for rectangles */
+   margin: 0 auto;
+   background-color: pink;
+ }
+
+
+ 
+ .circle {
+   width: 210px; /* Diameter of the circle */
+   height: 210px; /* Diameter of the circle */
+   padding-right: 30px;
+   padding-top:20px;
+   border-radius: 50%; /* Makes the div a circle */
+   background-color: red; /* Any color you like */
+   margin: 0 auto;
+   border-width: 10px;
+   border-color: blue!important;
+   margin-top: 70px;
+   border: 20px solid blue;
+ }
+
+ .circle p {color: white;}
+.circle img {color: white;}
+
+ .triangle {
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent; /* Adjust size as needed */
+   border-right: 50px solid transparent; /* Adjust size as needed */
+   border-bottom: 100px solid green; /* Adjust size and color as needed */
+   margin: 0 auto;
+ }
+
+
+ /* styles.css */
+ 
