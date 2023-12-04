@@ -139,5 +139,24 @@ border-radius: 15px;
  .profile h4 {text-align: center;
    margin: 0 auto;}
 
+
    #meetme {background-color: antiquewhite;
    color: #4169e1;}
+
+   .flexbox-lists {
+      
+      display: inline-flex;
+      flex-wrap: wrap;
+   }
+
+   .flexbox-lists > div {
+      flex: 1 1 30%;
+      margin: 15px;
+      border: 1px solid #ccc;
+      padding: 15px;
+
+   }
+
+   .flexbox-lists p {
+   text-align: left;
+   color: grey;}
