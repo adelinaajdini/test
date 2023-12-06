@@ -1,34 +1,40 @@
 body {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-color: #ffdab9; /* PeachPuff background */
+   background-color: #ffdab9;
+   /* PeachPuff background */
    margin: 20px;
 }
 
 h1 {
    font-family: 'Comic Sans MS', cursive, sans-serif;
-   color: #4169e1; /* RoyalBlue header */
+   color: #4169e1;
+   /* RoyalBlue header */
    text-align: center;
    font-size: 24px;
 }
 
 h2 {
    font-family: 'Comic Sans MS', cursive, sans-serif;
-   color: #8b4513; /* SaddleBrown subheader */
+   color: #8b4513;
+   /* SaddleBrown subheader */
    font-size: 18px;
    text-align: center;
 }
 
-h4 {font-size: 16px;}
+h4 {
+   font-size: 16px;
+}
+
 p {
-   color: #ff0000; /* Red text */
+   color: #ff0000;
+   /* Red text */
    line-height: 1.5;
    text-align: center;
 }
 
-.info
-{
-color: white;
-background-color: black;
+.info {
+   color: white;
+   background-color: black;
 }
 
 .piano {
@@ -39,11 +45,15 @@ background-color: black;
    text-decoration: underline;
 }
 
-a {text-decoration: none;
-color:#8b4513}
+a {
+   text-decoration: none;
+   color: #8b4513
+}
 
-img {display: block;
-margin: 0 auto;}
+img {
+   display: block;
+   margin: 0 auto;
+}
 
 
 .center {
@@ -55,7 +65,7 @@ margin: 0 auto;}
 .center dl {
    display: inline-block;
    text-align: left;
-   
+
 }
 
 footer {
@@ -68,121 +78,166 @@ footer {
 
 footer p {
    color: white;
-   font-family: 'Comic Sans MS', cursive, sans-serif;
-   font-size: 12px}
+   font-size: 12px;
+   margin-bottom: 30px;
 
-   footer a {color: white}
+}
 
-span 
-{
+footer a {
+   color: white
+}
+
+span {
    font-size: 10px;
-text-align: center;
-margin: 0 auto;}
-
-.square, .rectangle {
-   width: 100px; /* Adjust width as needed */
-   height: 100px; /* Adjust height as needed */
-   background-color: blue; /* Any color you like */
+   text-align: center;
    margin: 0 auto;
- }
+}
 
- .rectangle {
-   width: 200px; /* Adjust width for rectangles */
+.square,
+.rectangle {
+   width: 100px;
+   /* Adjust width as needed */
+   height: 100px;
+   /* Adjust height as needed */
+   background-color: blue;
+   /* Any color you like */
+   margin: 0 auto;
+}
+
+.rectangle {
+   width: 200px;
+   /* Adjust width for rectangles */
    margin: 0 auto;
    background-color: pink;
- }
+}
 
 
- 
- .circle {
-   width: 150px; /* Diameter of the circle */
-   height: 150px; /* Diameter of the circle */
+
+.circle {
+   width: 150px;
+   /* Diameter of the circle */
+   height: 150px;
+   /* Diameter of the circle */
    padding-right: 30px;
-   padding-top:20px;
-   border-radius: 50%; /* Makes the div a circle */
-   background-color: red; /* Any color you like */
+   padding-top: 20px;
+   border-radius: 50%;
+   /* Makes the div a circle */
+   background-color: red;
+   /* Any color you like */
    margin: 0 auto;
    border-width: 10px;
-   border-color: blue!important;
+   border-color: blue !important;
    margin-top: 70px;
    border: 20px solid blue;
- }
+}
 
- .circle p {color: white;}
- .circle img {color: white;}
+.circle p {
+   color: white;
+}
 
- .triangle {
+.circle img {
+   color: white;
+}
+
+.triangle {
    width: 0;
    height: 0;
-   border-left: 50px solid transparent; /* Adjust size as needed */
-   border-right: 50px solid transparent; /* Adjust size as needed */
-   border-bottom: 100px solid green; /* Adjust size and color as needed */
+   border-left: 50px solid transparent;
+   /* Adjust size as needed */
+   border-right: 50px solid transparent;
+   /* Adjust size as needed */
+   border-bottom: 100px solid green;
+   /* Adjust size and color as needed */
    margin: 0 auto;
- }
+}
 
 
- /* Styling our existing content into sections */
- 
- .title-section, .intro, .profile {
-background-color:#fbf5eb;
-padding: 15px;
-margin-top: 10px;
-border-radius: 15px;
+/* Styling our existing content into sections */
 
- }
+.title-section,
+.intro,
+.profile {
+   background-color: #fbf5eb;
+   padding: 15px;
+   margin-top: 10px;
+   border-radius: 15px;
 
- .intro {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
-  .profile {background-color: cornsilk;}
-
- .profile h4 {text-align: center;
-   margin: 0 auto;}
-
-
-   #meetme {background-color: antiquewhite;
-   color: #4169e1;}
-
-   .flexbox-lists {
-      
-      display: inline-flex;
-      flex-wrap: wrap;
-   }
-
-   .flexbox-lists > div {
-      flex: 1 1 30%;
-      margin: 15px;
-      border: 1px solid #ccc;
-      padding: 15px;
-
-   }
-
-   .flexbox-lists p {
-   font-family: 'AndikaNewBasicRegular';
-   text-align: left;
-   color: grey;}
-
-   .grid-container {
-      display: grid;
-      grid-template-rows: auto auto auto 1fr;
-      gap: 10px;
-
-   }
-
-   .title-section {
-      grid-column: 1 / span 4;
-      grid-row: 1;
-   }
+}
 
 .intro {
-grid-column: 1 / span 2;
-grid-row: 2;
-
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-image: url('test2.avif');
 }
 
 .profile {
-   grid-column: 3 / span 2;
-   grid-row: 2;
+   background-color: cornsilk;
+   background-image: url('test2.avif');
+   box-shadow: 0px 0px 10px 5px #00000030;
+}
+
+.profile h4 {
+   text-align: center;
+   margin: 0 auto;
 }
 
 
+#meetme {
+
+   background-image: url('test3.jpg');
+   color: #4169e1;
+}
+
+.flexbox-lists {
+
+   display: inline-flex;
+   flex-wrap: wrap;
+}
+
+.flexbox-lists>div {
+   flex: 1 1 30%;
+   margin: 15px;
+   border: 1px solid #ccc;
+   padding: 15px;
+
+}
+
+.flexbox-lists p {
+   font-family: 'AndikaNewBasicRegular';
+   text-align: left;
+   color: grey;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-rows: auto auto auto 1fr;
+   gap: 10px;
+
+}
+
+      .title-section {
+       grid-column: 1 / span 4;
+      grid-row: 1;
+      }
+
+      .intro {
+          grid-column: 1 / span 2;
+         grid-row: 2;
+      }
+
+      .profile {
+       grid-column: 3 / span 2;
+       grid-row: 2;
+      }
+
+      .flexbox-lists {
+         grid-row-start: 3;
+         grid-row-end: 4;
+         grid-column-start: 1;
+         grid-column-end: 5;
+      }
+
+      footer {
+         width: 100%;
+         grid-column: 1 / -1;
+         text-align: center;
+      }
