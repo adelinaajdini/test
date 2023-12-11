@@ -74,6 +74,7 @@ footer {
    padding: 12px;
    margin-top: 20px;
    align-items: center;
+   border-radius: 15px;
 }
 
 footer p {
@@ -246,6 +247,7 @@ span {
       header {
          background-color: #698ef4;
          padding: 20px;
+         border-radius: 15px;
       }
 
       .logo {
