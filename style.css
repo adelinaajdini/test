@@ -241,3 +241,38 @@ span {
          grid-column: 1 / -1;
          text-align: center;
       }
+
+
+      header {
+         background-color: #698ef4;
+         padding: 20px;
+      }
+
+      .logo {
+         display: flex;
+         width: 40%;
+         height: auto;
+         align-items: left;
+      }
+.logo img {
+   max-width: 30%;
+}
+      header h1 {font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 22px;
+color:black;}
+
+nav ul {
+   list-style: none;
+}
+
+nav ul li { display: inline;
+   margin: 1px;
+   background-color: #124ff7;
+   padding: 12px;
+   font-size: 12px;
+   
+   
+}
+
+nav ul li a {color: whitesmoke;}
