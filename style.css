@@ -243,38 +243,87 @@ span {
          text-align: center;
       }
 
-
+/* Designin the Header and Navigation */
       header {
-         background-color: #698ef4;
-         padding: 20px;
+         background-color: #333;
+         padding: 20px 0;
          border-radius: 15px;
       }
+      
+.header-container {
+      display: flex;
+      flex-direction: column; /* Vertical stacking of the items */
+      align-items: flex-start; /* Align items to the start (left)  of the container */
+   
 
+}
       .logo {
          display: flex;
-         width: 40%;
-         height: auto;
-         align-items: left;
+         align-items: flex-start;
+         vertical-align: center;
       }
-.logo img {
-   max-width: 30%;
-}
-      header h1 {font-size: 12px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-   margin-top: 22px;
-color:black;}
+      .logo img {
+       max-width: 40%;
+         }
+     header h1 {
+      color: #8dd7ed;
+      padding-top: 15px; }
 
 nav ul {
    list-style: none;
+   padding: 0 20px;
+   margin: 0;
+   display: flex;
 }
 
-nav ul li { display: inline;
+nav ul li { 
+   display: inline;
    margin: 1px;
-   background-color: #124ff7;
    padding: 12px;
    font-size: 12px;
    
-   
+}
+
+nav ul li a:hover {
+   background-color: #8c8989;
+   padding: 10px;
+   border-radius: 8px;
+   color: #8dd7ed;
 }
 
 nav ul li a {color: whitesmoke;}
+
+/* Dropdown styles */
+nav ul li {
+   position: relative; /* Needed for positioning the dropdown */
+   display: inline-block; /* Use inline-block for positioning */
+   margin: 0;
+ }
+ 
+ nav ul li ul.sub-menu {
+   display: none;
+   position: absolute;
+   top: 100%; /* Position the submenu below the parent */
+   left: 0;
+   background-color: #444;
+   padding: 10px 0;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ nav ul li:hover ul.sub-menu {
+   display: block;
+ }
+ 
+ nav ul li ul.sub-menu li {
+   display: block;
+   list-style: none!important;
+   margin: 5px 0;
+ }
+ 
+ nav ul li ul.sub-menu a {
+   padding: 8px 20px;
+   font-size: 14px;
+   color: #fff;
+   text-decoration: none;
+ }
