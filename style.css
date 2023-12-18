@@ -327,3 +327,28 @@ nav ul li {
    color: #fff;
    text-decoration: none;
  }
+
+ form {
+   max-width: 300px;
+   margin: 0 auto;
+ }
+form input[type="text"],
+form textarea,
+ form input[type="submit"], input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+ }
+form textarea {
+   resize: vertical;
+ }
+form input[type="submit"] {
+   background-color: #6e726e;
+   color: white;
+   border: none;
+   cursor: pointer;
+
+ }
+form input[type="submit"]:hover {
+   background-color: #4CAF50;
+ }
