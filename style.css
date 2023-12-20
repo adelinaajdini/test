@@ -215,59 +215,65 @@ span {
 
 }
 
-      .title-section {
-       grid-column: 1 / span 4;
-      grid-row: 1;
-      }
+.title-section {
+   grid-column: 1 / span 4;
+   grid-row: 1;
+}
 
-      .intro {
-          grid-column: 1 / span 2;
-         grid-row: 2;
-      }
+.intro {
+   grid-column: 1 / span 2;
+   grid-row: 2;
+}
 
-      .profile {
-       grid-column: 3 / span 2;
-       grid-row: 2;
-      }
+.profile {
+   grid-column: 3 / span 2;
+   grid-row: 2;
+}
 
-      .flexbox-lists {
-         grid-row-start: 3;
-         grid-row-end: 4;
-         grid-column-start: 1;
-         grid-column-end: 5;
-      }
+.flexbox-lists {
+   grid-row-start: 3;
+   grid-row-end: 4;
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
 
-      footer {
-         width: 100%;
-         grid-column: 1 / -1;
-         text-align: center;
-      }
+footer {
+   width: 100%;
+   grid-column: 1 / -1;
+   text-align: center;
+}
 
 /* Designin the Header and Navigation */
-      header {
-         background-color: #333;
-         padding: 20px 0;
-         border-radius: 15px;
-      }
-      
+header {
+   background-color: #333;
+   padding: 20px 0;
+   border-radius: 15px;
+}
+
 .header-container {
-      display: flex;
-      flex-direction: column; /* Vertical stacking of the items */
-      align-items: flex-start; /* Align items to the start (left)  of the container */
-   
+   display: flex;
+   flex-direction: column;
+   /* Vertical stacking of the items */
+   align-items: flex-start;
+   /* Align items to the start (left)  of the container */
+
 
 }
-      .logo {
-         display: flex;
-         align-items: flex-start;
-         vertical-align: center;
-      }
-      .logo img {
-       max-width: 40%;
-         }
-     header h1 {
-      color: #8dd7ed;
-      padding-top: 15px; }
+
+.logo {
+   display: flex;
+   align-items: flex-start;
+   vertical-align: center;
+}
+
+.logo img {
+   max-width: 40%;
+}
+
+header h1 {
+   color: #8dd7ed;
+   padding-top: 15px;
+}
 
 nav ul {
    list-style: none;
@@ -276,12 +282,12 @@ nav ul {
    display: flex;
 }
 
-nav ul li { 
+nav ul li {
    display: inline;
    margin: 1px;
    padding: 12px;
    font-size: 12px;
-   
+
 }
 
 nav ul li a:hover {
@@ -291,64 +297,99 @@ nav ul li a:hover {
    color: #8dd7ed;
 }
 
-nav ul li a {color: whitesmoke;}
+nav ul li a {
+   color: whitesmoke;
+}
 
 /* Dropdown styles */
 nav ul li {
-   position: relative; /* Needed for positioning the dropdown */
-   display: inline-block; /* Use inline-block for positioning */
+   position: relative;
+   /* Needed for positioning the dropdown */
+   display: inline-block;
+   /* Use inline-block for positioning */
    margin: 0;
- }
- 
- nav ul li ul.sub-menu {
+}
+
+nav ul li ul.sub-menu {
    display: none;
    position: absolute;
-   top: 100%; /* Position the submenu below the parent */
+   top: 100%;
+   /* Position the submenu below the parent */
    left: 0;
    background-color: #444;
    padding: 10px 0;
    border-radius: 5px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
- 
- nav ul li:hover ul.sub-menu {
+}
+
+nav ul li:hover ul.sub-menu {
    display: block;
- }
- 
- nav ul li ul.sub-menu li {
+}
+
+nav ul li ul.sub-menu li {
    display: block;
-   list-style: none!important;
+   list-style: none !important;
    margin: 5px 0;
- }
- 
- nav ul li ul.sub-menu a {
+}
+
+nav ul li ul.sub-menu a {
    padding: 8px 20px;
    font-size: 14px;
    color: #fff;
    text-decoration: none;
- }
+}
 
- form {
+/* FORM STYLING */
+form {
    max-width: 300px;
    margin: 0 auto;
- }
+}
+
 form input[type="text"],
 form textarea,
- form input[type="submit"], input[type="password"] {
+form input[type="submit"],
+input[type="password"] {
    width: 100%;
    padding: 10px;
    margin-bottom: 10px;
- }
+}
+
 form textarea {
    resize: vertical;
- }
+}
+
 form input[type="submit"] {
    background-color: #6e726e;
    color: white;
    border: none;
    cursor: pointer;
+}
 
- }
 form input[type="submit"]:hover {
    background-color: #4CAF50;
- }
+}
+
+/* TABLE styling */
+
+#table {margin-bottom: 80%;
+color: black;}
+
+
+table {
+
+border-collapse: collapse;
+font-size: 16px;
+color: black;
+font-family: roboto;
+margin: 90px;
+padding: 20px;
+display: inline-flex;
+
+
+}
+
+th, td {
+   border: 1px solid black;
+padding: 20px;
+
+}
