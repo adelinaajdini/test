@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-   font-family: 'Comic Sans MS', cursive, sans-serif;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #4169e1;
    /* RoyalBlue header */
    text-align: center;
@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-   font-family: 'Comic Sans MS', cursive, sans-serif;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #8b4513;
    /* SaddleBrown subheader */
    font-size: 18px;
@@ -163,16 +163,17 @@ span {
    margin-top: 10px;
    border-radius: 15px;
 
+
 }
 
 .intro {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-image: url('test2.avif');
+  
 }
 
 .profile {
    background-color: cornsilk;
-   background-image: url('test2.avif');
+  
    box-shadow: 0px 0px 10px 5px #00000030;
 }
 
@@ -185,28 +186,91 @@ span {
 #meetme {
 
    background-image: url('test3.jpg');
-   color: #4169e1;
+   color: white;
 }
 
 .flexbox-lists {
 
-   display: inline-flex;
+   display: flex;
    flex-wrap: wrap;
+
+   gap: 20px;
 }
 
 .flexbox-lists>div {
-   flex: 1 1 30%;
-   margin: 15px;
+   flex: 1 1 calc(33.33% - 20px);
+   padding: 20px;
    border: 1px solid #ccc;
-   padding: 15px;
+   border-radius: 8px;
+   background-color: #fff;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
+ 
+}
 
+.flexbox-lists>div:hover {
+   transform: translateY(-5px);
+}
+
+.flexbox-lists h3 {
+   font-size: 18px;
+   margin-bottom: 10px;
+   color: #333;
+   text-align: center;
 }
 
 .flexbox-lists p {
    font-family: 'AndikaNewBasicRegular';
-   text-align: left;
+   font-size: 14px;
+   color: #666;
+}
+
+.flexbox-lists ul, .flexbox-lists ol, .flexbox-lists dl {
+   margin-top: 10px;
+   padding-left: 0;
+   list-style: none;
+   text-align: center;
+}
+
+.flexbox-lists ul li::before {
+   content: "\2022"; /* Bullet point character */
+   color: #666;
+   font-weight: bold;
+   display: inline-block;
+   width: 1em;
+   margin-left: -1em;
+   
+}
+
+.flexbox-lists ol li {
+   counter-increment: my-counter;
+}
+
+.flexbox-lists ol li::before {
+   content: counter(my-counter) ". ";
+   color: #666;
+   font-weight: bold;
+}
+
+.flexbox-lists p {
+   font-family: 'AndikaNewBasicRegular';
+   text-align: center;
    color: grey;
 }
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+   .flexbox-lists {
+      display: block;
+   }
+
+   .flexbox-lists>div {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}
+
+/* END OF CSS CARDS */
 
 .grid-container {
    display: grid;
@@ -429,6 +493,13 @@ padding-right:20px;}
    body {font-size:80%;}
 
 }
+
+/* Ending mobile design */
+
+/* Starting the CSS Cards */
+
+
+
 
 
 
