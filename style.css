@@ -393,3 +393,42 @@ th, td {
 padding: 20px;
 
 }
+
+/* STYLING THE MOBILE VIEW */
+@media screen and (max-width:768px) {
+
+   .header-container {align-items: left;
+   margin-left: 30px;
+   }
+
+ nav ul {flex-direction: column;
+padding: 0;}
+
+
+nav ul li {display: flex;
+margin: 5px 0;
+text-align: left; }
+
+nav ul li ul.sub-menu {
+   position: static;
+   display: none;
+}
+
+   .logo {display: flex;
+   align-items: flex-start;
+flex-direction: row;}
+
+.logo img {max-width: 30%;
+align-self: flex-start;
+margin-top: 8px;
+padding-right:20px;}
+
+   .flexbox-lists {display: block; }
+   .intro, .profile {display: none;}
+
+   body {font-size:80%;}
+
+}
+
+
+
