@@ -5,6 +5,10 @@ body {
    margin: 20px;
 }
 
+header {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+
 h1 {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #4169e1;
@@ -187,6 +191,7 @@ span {
 
    background-image: url('test3.jpg');
    color: white;
+   margin-bottom: 0px ;
 }
 
 .flexbox-lists {
@@ -204,12 +209,12 @@ span {
    border-radius: 8px;
    background-color: #fff;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease-in-out;
+   transition: transform 0.3s ease-in;
  
 }
 
 .flexbox-lists>div:hover {
-   transform: translateY(-5px);
+   transform: translateX(50px);
 }
 
 .flexbox-lists h3 {
@@ -337,6 +342,7 @@ header {
 header h1 {
    color: #8dd7ed;
    padding-top: 15px;
+   padding-left:20px;
 }
 
 nav ul {
@@ -416,7 +422,10 @@ input[type="password"] {
    width: 100%;
    padding: 10px;
    margin-bottom: 10px;
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+
 
 form textarea {
    resize: vertical;
@@ -496,10 +505,36 @@ padding-right:20px;}
 
 /* Ending mobile design */
 
-/* Starting the CSS Cards */
+/*Starting Animations */
 
+@keyframes pulse {
 
+0% {
+   transform: scale(1);
+}
+50% {
+   transform: scale(1.1);
+}
+100% {
+   transform: rotateX(50deg);
+}
+}
 
+@keyframes fadeInLeft {
+   0% {
+       opacity: 0;
+       transform: translateX(-20px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
 
+.profile img:hover {animation: pulse 2s infinite;}
 
+header:hover {
 
+   animation: pulse 50s infinite;}
+
+   /* End of using animations */
