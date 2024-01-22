@@ -531,10 +531,49 @@ padding-right:20px;}
    }
 }
 
-.profile img:hover {animation: pulse 2s infinite;}
+.profile img:hover {animation: pulse 2s;
+   animation-iteration-count: 1;}
 
 header:hover {
 
-   animation: pulse 50s infinite;}
+animation: pulse 20s;
+animation-iteration-count: 1;}
 
    /* End of using animations */
+/* transitions */
+
+.animated-buttons {
+   display: inline-block;
+   padding: 10px 20px;
+   border: 2px solid #3498db;
+   margin: 20px;
+   color:#3498db;
+   position: relative;
+
+}
+
+ /* Animated Buttons */
+
+  .animated-buttons:hover {
+    color: #fff;
+  }
+
+  .animated-buttons::before {
+   content: '';
+   position: absolute;
+   background: #3498db;
+   height: 100%;
+   width: 0;
+   top: 0;
+   left: 50%;
+   z-index: -1;
+   transition: all 2.3s ease;
+ }
+
+ .animated-buttons:hover::before {
+   width: 100%;
+  left: 0;
+ }
+
+
+ 
