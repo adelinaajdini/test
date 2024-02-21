@@ -71,6 +71,13 @@ nav ul li:hover>ul {
     margin: 20px 0;
 }
 
+.title-section p {
+    text-align: left;
+    padding: 20px!important;
+    margin-bottom: 620px;
+}
+
+
 .test {
     font-size: 36px;
     color: #1abc9c;
@@ -108,7 +115,7 @@ nav ul li:hover>ul {
     transition: transform 0.3s ease;
 }
 
-.profile img {
+.profile img:hover {
     transform: rotate(360deg) scale(1.2);
 }
 
